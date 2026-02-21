@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% load static %}
+{% block header_title %}Acerca de{% endblock %}
+{% block header_subtitle %}Conoce más sobre mí{% endblock %}
+{% block header_bg %}{% static "img/about-bg.jpg" %}{% endblock %}
+{% block content %}
+<!-- Contenido Principal -->
+<div class="container">
+  <div class="row">
+    <div class="col-lg-3 col-md-4 offset-lg-1">
+      <img class="img-fluid avatar" src="{% static 'img/avatar.jpg' %}" alt="">
+    </div>
+    <div class="col-lg-7 col-md-8">
+      <h2 class="section-heading">Juan Pérez</h2>
+      <p>Nacido en... lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe nostrum ullam eveniet pariatur
+        voluptates odit, fuga atque ea nobis sit soluta odio.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe nostrum ullam eveniet pariatur voluptates
+        odit...</p>
+    </div>
+  </div>
+</div>
+{% endblock %}
