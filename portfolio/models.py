@@ -7,8 +7,8 @@ class Project(models.Model):
     description = models.TextField()
     link = models.URLField(blank=True, null=True)
     image = models.ImageField(upload_to='projects')
-
     created = models.DateTimeField(auto_now_add=True)
+    update = models.DateTimeField(auto_now=True)
 
     def __str__(self):
         return self.title
